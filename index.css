@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    border: 1px solid rgba(255, 0, 0, 0.5); /* Borde rojo semitransparente */
+    /*border: 1px solid rgba(255, 0, 0, 0.5); /* Borde rojo semitransparente */
 }
 
 body {
@@ -116,7 +116,7 @@ section {
 }
 
 :hover.contenedor__tarjeta__plan{
-    transform: translateY(-3px); /* Desplazar hacia arriba 20px en hover */
+    transform: translateY(-3px); /* Desplazar hacia arriba en hover */
 }
 
 .contenedor__cabecera-tarjeta{
@@ -142,6 +142,34 @@ section {
     height: 50%;
 }
 
+/* CSS para visualizacion de videos de youtube en las tablas de rutinas*/
+
+.video-container {
+    position: relative;
+  }
+  
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block; /* Aseguramos que el iframe sea un bloque */
+  }
+  
+.ver-video {
+    display: none; /* Ocultamos el enlace por defecto */
+    text-decoration: none;
+    background-color: var(--gris-oscuro); /* Color de fondo */
+    color: var(--blanco); /* Color del texto */
+    padding: 10px 15px; /* Espaciado del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center;
+    margin-top: 10px; /* Espaciado arriba */
+}
+
+:hover.ver-video{
+    background-color: var(--rojo-claro);
+    transform: translateY(-2px); /* Desplazar hacia arriba 20px en hover */
+
+}
 
 /*Sección de pre y footer*/
 .pre-footer__image {
@@ -185,7 +213,6 @@ section {
 }
 
 /* Estilos para la seccion rutinas de hombre*/
-
 /* Estilo de tabla general */
 table {
     width: 100%;
@@ -206,7 +233,7 @@ th, td {
 }
 
 th {
-    background-color: var(--rojo);
+    background-color: var(--grafito);
     color: var(--blanco);
     text-transform: uppercase;
 }
@@ -218,10 +245,6 @@ td {
 
 tr:nth-child(even) td {
     background-color: #fff;
-}
-
-tr:hover td {
-    background-color: #ffebee;
 }
 
 /* Estilo responsivo para videos en las celdas */
@@ -276,5 +299,13 @@ td iframe {
     .contenedor__tarjeta__plan{
         margin: 1%;
         width: 35%;
+    }
+
+    .video-container iframe {
+        display: none; /* Ocultamos el iframe para eliminar la miniatura */
+    }
+    
+      .ver-video {
+        display: inline-block; /* Mostramos el enlace */
     }
 }

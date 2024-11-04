@@ -19,51 +19,27 @@
 
   <body>
     <header class="encabezado__container">
-            <!-- Botón de menú para pantallas pequeñas -->
-            <button class="menu__button" aria-label="Abrir menú de navegación" onclick="toggleMenu()">☰ Menú</button>
-      
-      <nav class="encabezado__navegacion" aria-label="Navegación principal">
+      <button class="menu__button" aria-label="Abrir menú de navegación" onclick="toggleMenu()">☰ Menú</button>
+    >
+      <nav class="encabezado__navegacion" id="menu" aria-label="Navegación principal">
         <a
           class="encabezado__navegacion--elemento"
           href="index.html"
-          aria-label="Regresar al inicio"
+          aria-label="Rutinas para hombres"
           >Inicio</a
         >
-        <button
-        class="encabezado__navegacion--elemento"
-        onclick="cargarRutina();"
-          class="visual_boton_encriptar"
+        <a
+          class="encabezado__navegacion--elemento"
+          href="pecho.html"
+          aria-label="Rutinas para mujeres"
+          >Pecho</a
         >
-          Pecho
-        </button>
-        <button
-        class="encabezado__navegacion--elemento"
-        onclick="cargarRutina();"
-          class="visual_boton_encriptar"
+        <a
+          class="encabezado__navegacion--elemento"
+          href="#contacto"
+          aria-label="Ir a la sección de contacto"
+          >Contacto</a
         >
-          Espalda
-        </button>
-        <button
-        class="encabezado__navegacion--elemento"
-        onclick="cargarRutina();"
-          class="visual_boton_encriptar"
-        >
-          Biceps
-        </button>
-        <button
-        class="encabezado__navegacion--elemento"
-        onclick="cargarRutina();"
-          class="visual_boton_encriptar"
-        >
-          Hombro
-        </button>
-        <button
-        class="encabezado__navegacion--elemento"
-        onclick="cargarRutina();"
-          class="visual_boton_encriptar"
-        >
-          Pierna
-        </button>
       </nav>
       <h1 class="banner__titulo_descrpicion">RUTINAS PARA HOMBRE</h1>
       <img
@@ -84,67 +60,80 @@
           <td>Press en banco plano con mancuernas o barra</td>
           <td>3 a 4 series<br>8 a 10 Repeticiones</td>
           <td>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/fqsTgdTPRQU?si=hqrgEmH-mrkIj-_s"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/fqsTgdTPRQU?si=hqrgEmH-mrkIj-_s"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <a class="ver-video" href="https://www.youtube.com/watch?v=fqsTgdTPRQU" target="_blank">Ver video</a>
+            </div>
           </td>
         </tr>
         <tr>
           <td>Press en banco inclinado con mancuernas o barra</td>
           <td>3 a 4 series<br>8 a 10 Repeticiones</td>
           <td>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/T8b7bt5zPZw?si=I_-lbXDYaPTyuZIp"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/T8b7bt5zPZw?si=I_-lbXDYaPTyuZIp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <a class="ver-video" href="https://www.youtube.com/watch?v=T8b7bt5zPZw" target="_blank">Ver video</a>
+            </div>
           </td>
         </tr>
         <tr>
           <td>Apertura con mancuernas</td>
           <td>3 a 4 series<br>8 a 10 Repeticiones</td>
           <td>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/qk4IOBfAs_k?si=583NeXBRfrMuJcpb"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qk4IOBfAs_k?si=583NeXBRfrMuJcpb"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <a class="ver-video" href="https://www.youtube.com/watch?v=qk4IOBfAs_k" target="_blank">Ver video</a>
+            </div>
           </td>
         </tr>
         <tr>
           <td>Apertura en maquina</td>
           <td>3 a 4 series<br>8 a 10 Repeticiones</td>
           <td>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/U5lV7oPW3CA?si=6tMYayq3hmCvf8Z9"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/U5lV7oPW3CA?si=6tMYayq3hmCvf8Z9"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <a class="ver-video" href="https://www.youtube.com/watch?v=U5lV7oPW3CA" target="_blank">Ver video</a>
+            </div>
           </td>
         </tr>
       </table>
+      
     </section>
   </body>
   <footer>
