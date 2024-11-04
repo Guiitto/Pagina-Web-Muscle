@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
     <title>Rutinas Mujer</title>
     <link rel="icon" href="./img/icono.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./global.css" />
@@ -19,148 +22,190 @@
 
   <body>
     <header class="encabezado__container">
-            <!-- Botón de menú para pantallas pequeñas -->
-            <button class="menu__button" aria-label="Abrir menú de navegación" onclick="toggleMenu()">☰ Menú</button>
-      
-      <nav class="encabezado__navegacion" aria-label="Navegación principal">
+      <button
+        class="menu__button"
+        aria-label="Abrir menú de navegación"
+        onclick="toggleMenu()">☰ Menú</button>
+      <nav
+        class="encabezado__navegacion"
+        id="menu"
+        aria-label="Navegación principal">
         <a
           class="encabezado__navegacion--elemento"
           href="index.html"
-          aria-label="Regresar al inicio"
+          aria-label="Rutinas para mujeres"
           >Inicio</a
         >
-        <button
-        class="encabezado__navegacion--elemento"
-        onclick="cargarRutina();"
-          class="visual_boton_encriptar"
+        <a
+          class="encabezado__navegacion--elemento"
+          href="#"
+          aria-label="Rutinas para hombres"
+          onclick="cargarRutina();"
+        > Ejercicios Espalda</a>
+        <a
+          class="encabezado__navegacion--elemento"
+          href="#"
+          aria-label="Rutinas para hombres"
+          onclick="cargarRutina();"
         >
-          Pecho
-        </button>
-        <button
-        class="encabezado__navegacion--elemento"
-        onclick="cargarRutina();"
-          class="visual_boton_encriptar"
+        Ejercicios Pecho</a>
+        <a
+          class="encabezado__navegacion--elemento"
+          href="#contacto"
+          aria-label="Ir a la sección de contacto"
+          >Contacto</a
         >
-          Espalda
-        </button>
-        <button
-        class="encabezado__navegacion--elemento"
-        onclick="cargarRutina();"
-          class="visual_boton_encriptar"
-        >
-          Biceps
-        </button>
-        <button
-        class="encabezado__navegacion--elemento"
-        onclick="cargarRutina();"
-          class="visual_boton_encriptar"
-        >
-          Hombro
-        </button>
-        <button
-        class="encabezado__navegacion--elemento"
-        onclick="cargarRutina();"
-          class="visual_boton_encriptar"
-        >
-          Pierna
-        </button>
       </nav>
       <h1 class="banner__titulo_descrpicion">RUTINAS PARA MUJER</h1>
       <img
         class="banner__img"
         alt="Personas entrenando en el gimnasio"
-        src="./img/hombre.jpg"
+        src="./img/mujer.jpg"
       />
     </header>
 
     <section class="contenedor__lista_rutina_hombre">
+      <div class="contenedor__tabla">
       <table>
         <tr>
           <th>Ejercicio</th>
-          <th>Series</th>
-          <th>Repeticiones</th>
+          <th>Series y Repeticiones</th>
           <th>Video tutorial</th>
         </tr>
         <tr>
           <td>Press en banco plano con mancuernas o barra</td>
-          <td>3 a 4</td>
-          <td>8 a 10</td>
+          <td>3 a 4 series<br />8 a 10 Repeticiones</td>
           <td>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/fqsTgdTPRQU?si=hqrgEmH-mrkIj-_s"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/fqsTgdTPRQU?si=hqrgEmH-mrkIj-_s"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <a
+                class="ver-video"
+                href="https://www.youtube.com/watch?v=fqsTgdTPRQU"
+                target="_blank"
+                >Ver video</a
+              >
+            </div>
           </td>
         </tr>
         <tr>
           <td>Press en banco inclinado con mancuernas o barra</td>
-          <td>3 a 4</td>
-          <td>8 a 10</td>
+          <td>3 a 4 series<br />8 a 10 Repeticiones</td>
           <td>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/T8b7bt5zPZw?si=I_-lbXDYaPTyuZIp"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/T8b7bt5zPZw?si=I_-lbXDYaPTyuZIp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <a
+                class="ver-video"
+                href="https://www.youtube.com/watch?v=T8b7bt5zPZw"
+                target="_blank"
+                >Ver video</a
+              >
+            </div>
           </td>
         </tr>
         <tr>
           <td>Apertura con mancuernas</td>
-          <td>3 a 4</td>
-          <td>8 a 10</td>
+          <td>3 a 4 series<br />8 a 10 Repeticiones</td>
           <td>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/qk4IOBfAs_k?si=583NeXBRfrMuJcpb"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qk4IOBfAs_k?si=583NeXBRfrMuJcpb"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <a
+                class="ver-video"
+                href="https://www.youtube.com/watch?v=qk4IOBfAs_k"
+                target="_blank"
+                >Ver video</a
+              >
+            </div>
           </td>
         </tr>
         <tr>
           <td>Apertura en maquina</td>
-          <td>3 a 4</td>
-          <td>8 a 10</td>
+          <td>3 a 4 series<br />8 a 10 Repeticiones</td>
           <td>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/U5lV7oPW3CA?si=6tMYayq3hmCvf8Z9"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/U5lV7oPW3CA?si=6tMYayq3hmCvf8Z9"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <a
+                class="ver-video"
+                href="https://www.youtube.com/watch?v=U5lV7oPW3CA"
+                target="_blank"
+                >Ver video</a
+              >
+            </div>
           </td>
         </tr>
       </table>
+      </div>
     </section>
   </body>
   <footer>
-    <img class="pre-footer__image" alt="personas_entrenamiento" src="./img/mujeres.jpg" />
+    <img
+      class="pre-footer__image"
+      alt="personas_entrenamiento"
+      src="./img/mujeres.jpg"
+    />
     <div class="footer__social-media-container">
       <p>Accede a nuestras redes sociales</p>
       <div class="footer__social-media-icons">
-        <a href="https://wa.me/573155668635"><img class="footer__social-media-icon" alt="Whatsapp" src="./img/whatsapp_2xl.svg" /></a>
-        <a href=""><img class="footer__social-media-icon" alt="Instagram" src="./img/instragam_2xl.svg" /></a>
-        <a href="https://linkedin.com/in/diego-fernando-espinal-carmona-4a633221b"><img class="footer__social-media-icon" alt="Linkedin" src="./img/linkedin_2xl.svg" /></a>
-        <a href="https://github.com/Guiitto" class="visual_boton"><img class="footer__social-media-icon" alt="Github" src="./img/github_2xlsvg.svg" /></a>
+        <a href="https://wa.me/573155668635"
+          ><img
+            class="footer__social-media-icon"
+            alt="Whatsapp"
+            src="./img/whatsapp_2xl.svg"
+        /></a>
+        <a href=""
+          ><img
+            class="footer__social-media-icon"
+            alt="Instagram"
+            src="./img/instragam_2xl.svg"
+        /></a>
+        <a
+          href="https://linkedin.com/in/diego-fernando-espinal-carmona-4a633221b"
+          ><img
+            class="footer__social-media-icon"
+            alt="Linkedin"
+            src="./img/linkedin_2xl.svg"
+        /></a>
+        <a href="https://github.com/Guiitto" class="visual_boton"
+          ><img
+            class="footer__social-media-icon"
+            alt="Github"
+            src="./img/github_2xlsvg.svg"
+        /></a>
       </div>
     </div>
     <p class="footer_index">Desarrollado por Guiitto_Tech - Portafolio web</p>
